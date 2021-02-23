@@ -1,7 +1,6 @@
 import Head from 'next/head'
-import React, { useEffect, useContext } from 'react';
+import React, { useContext } from 'react';
 import AppContext from '../context/AppContext';
-import api from '../service/api';
 
 import LoginButton from '../components/Login';
 import LoginForm from '../components/Form';
@@ -11,25 +10,14 @@ import { Content, Main } from '../styles/Divs';
 
 
 export default function Home() {
-  const { setUsers, validation } = useContext(AppContext);
-  const getUsers = () => {
-    api.get("users")
-      .then((response) => setUsers(response.data))
-      .catch((err) => {
-        console.error("ocorreu um erro:" + err);
-     });
-  }
-
-  useEffect(() => {
-    getUsers();
-  }, []);
+  const { validation } = useContext(AppContext);
 
   return (
     <div>
+      <Alert />
       <Head>
         <title>Wiser FrontEnd Test</title>
       </Head>
-      <Alert />
       <Main>
         <Content valid={validation}>
           <HeaderTop>Olá, seja bem-vindo!</HeaderTop>

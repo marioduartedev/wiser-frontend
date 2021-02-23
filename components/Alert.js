@@ -9,7 +9,7 @@ export default function Alert() {
     setAlert({ show: false, msg: '' })
   }
   return (
-    <Modal show={alert.show} onHide={close}>
+    <Modal show={alert.show} onHide={close} data-testid="alerta">
       <Modal.Header closeButton>
         <Modal.Title>Login Status</Modal.Title>
       </Modal.Header>

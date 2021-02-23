@@ -24,7 +24,7 @@ export default function LoginForm() {
   return (
     <Form>
       <Form.Group>
-        <Form.Label>E-MAIL</Form.Label>
+        <Form.Label htmlFor="email">E-MAIL</Form.Label>
         <Form.Control
           type="email"
           value={login.email}
@@ -39,7 +39,7 @@ export default function LoginForm() {
         <ValidEmail valid={validation}>Digite um email válido;</ValidEmail>
       </Form.Group>
       <Form.Group>
-        <Form.Label>SENHA</Form.Label>
+        <Form.Label htmlFor="senha">SENHA</Form.Label>
         <Form.Control
           type="password"
           value={login.senha}
