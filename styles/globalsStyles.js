@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 300;
     font-style: normal;
   }
-  @media only screen and (min-device-width: 768px) {
+  @media only screen and (min-device-width: 310px) {
     html,
     body {
       font-family: Montserrat;
