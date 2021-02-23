@@ -1,34 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Boas vindas ao repositório da Aplicação de Login para Processo seletivo da empresa Wiser!
 
-## Getting Started
+Esta aplicação atende as necessidades do desafio técnico da primeira fase do processo 
+seletivo da empresa Wiser.
+A aplicação demonstra as habilidades pessoais de Mário Duarte[https://github.com/marioduartedev]
+e linha de raciocínio, bem como o avanço da tarefa para prosseguir para futuras etapas do processo.
 
-First, run the development server:
+## Objetivo do Deasfio:
+O objetivo era criar uma aplicação de login, ou seja, acesso de um usuário.
+Para isso foi utilizado um serviço de mock para o serviço de API, do site https://www.mockapi.io.
+URL Base: https://6033de81843b150017931c55.mockapi.io
+O endepoint utilizado: /users
 
+ Esse projeto utiliza [Next.js](https://nextjs.org/)
+
+## Iniciando
+
+Primeiro, instale as dependências: 
+```npm install```
+
+
+Depois, rode a aplicação:
 ```bash
 npm run dev
 # or
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000) no seu navegador para ver o resultado.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Stack Utilizada:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+● React
+● Hooks
+● NextJS
+● Styled Components
+● Context Api utilizado no lugar de Redux
+● Axios
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Funcionamento esperado:
+ O funcionamento esperado pela aplicação é que ao preencher e-mail e senha deve ser mostrado um alerta com
+sucesso ou erro. Também há uma validação de preenchimento correto no campo de texto email utilizando Regex.
+A aplicação possui responsividade para diferentes tipos de equipamentos (Desktop, Iphone, Ipad).
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
