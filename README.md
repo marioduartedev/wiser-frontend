@@ -28,17 +28,25 @@ yarn dev
 
 Abra [http://localhost:3000](http://localhost:3000) no seu navegador para ver o resultado.
 
+A aplicação também conta com um arquivo de testes App.test.js e foram utilizados React Test Library e Jest
+
+Para rodar os testes
+```bash
+npm run test
+```
+
 ## Stack Utilizada:
 
 ● React
 ● Hooks
 ● NextJS
 ● Styled Components
-● Context Api utilizado no lugar de Redux
+● Context Api (similar ao Redux)
 ● Axios
 
 ## Funcionamento esperado:
  O funcionamento esperado pela aplicação é que ao preencher e-mail e senha deve ser mostrado um alerta com
 sucesso ou erro. Também há uma validação de preenchimento correto no campo de texto email utilizando Regex.
 A aplicação possui responsividade para diferentes tipos de equipamentos (Desktop, Iphone, Ipad).
+
 
