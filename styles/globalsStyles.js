@@ -10,34 +10,36 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 300;
     font-style: normal;
   }
-  html,
-  body {
-    font-family: Montserrat;
-    margin: 0;
-    padding: 0;
-    background: url("/mobile.png");
-    background-repeat: no-repeat;
-    background-position: center top;
-  }
+  @media only screen and (min-device-width: 768px) {
+    html,
+    body {
+      font-family: Montserrat;
+      margin: 0;
+      padding: 0;
+      background: url("/mobile.png");
+      background-repeat: no-repeat;
+      background-position: center top;
+    }
 
-  a {
-    text-decoration: underline;
-    color: white;
-  }
+    a {
+      text-decoration: underline;
+      color: white;
+    }
 
-  .form-label {
-    margin-left: 10px;
-    font-size: 10.5px;
-    color: #383E71;
-  }
-  .form-control{
-    width: 256px;
-    height: 48px;
-    font-size: 10.5px;
-    color: #383E71;
-    box-sizing: border-box;
-    border-radius: 8px;
-    background-color: transparent;
+    .form-label {
+      margin-left: 10px;
+      font-size: 10.5px;
+      color: #383E71;
+    }
+    .form-control{
+      width: 256px;
+      height: 48px;
+      font-size: 10.5px;
+      color: #383E71;
+      box-sizing: border-box;
+      border-radius: 8px;
+      background-color: transparent;
+    }
   }
   @media only screen and (min-device-width: 768px) {
       
